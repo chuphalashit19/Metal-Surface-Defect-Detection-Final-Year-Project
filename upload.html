@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	body {
+		background-image: url('Images/6.jpg')
+	}
+	</style>
+	<title>SAT Company</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="page-wrapper">
+			<div class="row">
+				<div class="container">
+					<div id="identitycard" style="margin-top:100px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<div class="panel-title" style="font-family:'Times New Roman', Times, serif; font-weight: bolder;">SAT Company - Metal Surface Defect Detect</div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<p style="padding: 2px; font-size:30px; font-family:'Times New Roman', Times, serif; font-weight: bold;" class="text-center">File to upload png, jpg, jpeg</p>
+								</div>
+								<div class="row" style="padding: 10px 90px 9px;">
+									<!-- multipart/form-data ensures that form data is going to be encoded as MIME data -->
+									<form action="file_upload.php" method="POST" enctype="multipart/form-data">
+										<div class="row" style="padding: 10px 15px 9px;"></div>
+                                            <h2 style="font-family:'Times New Roman', Times, serif;font-weight: bold;">Upload Files</h2>
+											    <!-- name of the input fields are going to be used in our php script-->
+											    <input type="file" name="files[]" multiple>
+											        <br><br>
+											    <div class="row text-center" style="padding-left: 20px;padding-right: 20px;">
+											        <input type="submit" name="submit" value="Upload" class="btn btn-lg btn-block btn-success" style="border-radius: 50px; background-color:lightgreen;color :black;"> 
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </form>
+									<form action="PythonPHP.php" method="POST" >
+										<div class="row" style="padding: 10px 15px 9px;"></div>
+                                            <h3 style="font-family:'Times New Roman', Times, serif; font-weight:bold";><center>Run The Test</center></h3>
+											    <div class="row text-center" style="padding-left: 30px;padding-right: 30px;">
+											        <input type="submit" name="submit" value="RUN" class="btn btn-lg btn-block btn-success" style="border-radius: 50px; background-color:lightblue;"> 
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </form>
+									<form action="logout.php" method="POST" >
+										<div class="row" style="padding: 10px 15px 9px;"></div>
+											    <div class="row text-center" style="padding-left: 200px;padding-right: 200px;">
+													<input type="submit" name="submit" value="Log Out" class="btn btn-lg btn-block btn-success" style="border-radius: 50px; background-color:lightslategray;"> 
+												</div>
+                                            </p>
+                                        </div>
+                                    </form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
